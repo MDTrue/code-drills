@@ -12,8 +12,17 @@
   <script>
     function unique(str) {
     // ====================== YOUR WORK HERE ===================
+    //if you remove all instances of a letter the length will be more than one less if there is more than one instance
+    var strArr = str.split("")
+    var searchLetter = str[j]
+    for(var j = 0; j<str.length;j++){
+  if((str.length)-(str.replace(searchLetter, "").length> 1)) {
+    console.log("true")
+  }else{
+    console.log("false")
+  }
 
-
+}
 
 
 

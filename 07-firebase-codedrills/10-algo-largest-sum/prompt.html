@@ -14,10 +14,27 @@
 
     function largestSum(arr) {
     // ====================== YOUR WORK HERE ===================
+    //arrange the array from smallest to largest and then add the two largest, this works althoug it is not the given solution
+    var hold 
+    var counter = 0
+    for(var j = 0; j < arr.length; j ++){
+      if(arr[j] > arr[j+1]){
+       hold = arr[j];
+       arr[j] = arr[j + 1]
+       arr[j + 1] = hold
+        counter ++
+        if(counter !== 0){
+          j = 0;
+        }
+        
+      }
+     
+    }
 
-
-
-
+// console.log(arr)
+var sum = (arr[((arr.length)-1)])+(arr[((arr.length)-2)])
+return sum
+// console.log(sum)
 
     // =========================================================
   }

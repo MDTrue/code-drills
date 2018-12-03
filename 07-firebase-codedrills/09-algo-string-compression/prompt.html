@@ -12,6 +12,23 @@
   <script>
     function compressor(str) {
     // ====================== YOUR WORK HERE ===================
+    var solutionStr = ""
+    var instances = 0
+   
+    for(var j = 0; j < str.length;j ++){
+      for(var k = 0; k < str.length;k ++){
+        if(str[j] === str[k]){
+          instances ++;
+         
+        }
+      }
+     if(!(solutionStr.includes(str[j]))){
+      solutionStr += (str[j] + instances.toString())
+     }
+    }console.log(solutionStr)
+    
+      
+    
 
 
 
